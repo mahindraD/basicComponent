@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <button onClick={submit}>Click!</button>
+      <button onClick={submit}>Click !</button>
       <br></br>
       <br></br>
       <Navigation data={json}/>
