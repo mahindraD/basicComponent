@@ -1,26 +1,23 @@
-import "./Chats.css";
+import './App.css'
 import React from 'react';
+import Chats  from "./Chats";
+import { useState } from 'react';
 
-export default function Chats({data}) {
-  let count=1;
+function App() {
 
-  return (
-    <div className="chats"> 
-      {
-        data.map((f)=>(
-          <a href="#" class="d-flex align-items-center">
-          <h6>{count++}</h6><br /><br />
-          <div class="flex-shrink-0">
-                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img" />
-                <span class="active"></span>
-           </div>
-            <div class="flex-grow-1 ms-3">
-                <h3>{f.name}</h3>
-                <p>{f.message || f.lastMessage || "last message"}</p>
-            </div>
-          </a>                                                        
-        ))
-      }
-  </div>
-  );
+  let [json,setJson]=useState([]);
+
+  let func = () =>{
+    let data = prompt("enter json format data");
+    data=JSON.parse(data);
+    setJson(data);
+  }
+
+  return (<>
+    <button onClick={func}>click me!</button>
+    <Chats data={json}/>
+  </>
+  )
 }
+
+export default App
