@@ -15,7 +15,7 @@ export default function Chats({data}) {
                 <span className="active"></span>
            </div>
             <div className="flex-grow-1 ms-3">
-                <h3>{f.name}</h3>
+                <h3>{f.name || "name"}</h3>
                 <p>{f.message || f.lastMessage || "last message"}</p>
             </div>
           </a>                                                        
