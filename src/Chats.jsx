@@ -9,7 +9,7 @@ export default function Chats({data}) {
       {
         data.map((f)=>(
           <a href="#" className="d-flex align-items-center">
-          <h6>{count++}</h6><br /><br />
+          <h6>{count++}</h6>
           <div className="flex-shrink-0">
                 <img className="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img" />
                 <span className="active"></span>
