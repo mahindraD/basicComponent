@@ -1,0 +1,20 @@
+*{
+    margin-left: 5px;
+}
+.chats{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+    border:2px solid gray;
+    padding:5px;
+    border-radius: 5px;
+}
+
+p{
+    color:black;
+}
