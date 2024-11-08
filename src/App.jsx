@@ -10,11 +10,10 @@ function App() {
     data=JSON.parse(data);
     setJson(data);
   }
-  console.log(json);
 
   return (
     <>
-      <button onClick={submit}>Submit</button>
+      <button onClick={submit}>Click!</button>
       <br></br>
       <br></br>
       <Navigation data={json}/>
